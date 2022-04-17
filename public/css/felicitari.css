@@ -1,0 +1,21 @@
+h1{
+  margin: auto;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.generated-text {
+   font-family:Georgia, serif;
+   font-size:20px;
+   line-height:20px;
+   color:#ffffff;
+   background-color:#D9D7F1;
+   padding:20px;
+   margin: auto;
+
+}

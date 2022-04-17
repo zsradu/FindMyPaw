@@ -8,10 +8,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  background: url("public/img/paws5.jpg") top center;
-
-}
 
 a {
   color: #000;
@@ -372,7 +368,17 @@ section {
 
 
   /* Section datele mele */
-
+.data {
+  border-radius: 5px;
+  border: solid 3px;
+background-color: #D9D7F1;
+padding: 20px;
+width: 300px;
+font-weight: bold;
+font-size: 1.5rem;
+text-align: left;
+margin-left: 300px;
+  }
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -391,15 +397,4 @@ section {
     border: none;
     border-radius: 2px;
     cursor: pointer;
-  }
-
-
-  .data {
-    border-radius: 5px;
-    margin: auto;
-    width: 300px;
-    padding-left: 200px;
-    border: solid 3px;
-    text-align: left;
-    background-color: #D9D7F1;
   }

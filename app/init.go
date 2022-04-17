@@ -55,6 +55,7 @@ func initDB() {
 	//var animal2 models.Animal
 	//animal2.AnimalType = "Pisică"
 	//animal2.Found = false
+	//animal2.Age = "Pui"
 	//animal2.FirstX = 44.38018967233391
 	//animal2.FirstY = 26.106400184624395
 	//animal2.LastX = animal2.FirstX

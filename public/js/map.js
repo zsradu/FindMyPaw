@@ -56,10 +56,10 @@ function createMarkerFromAddress(address) {
 // const resp = await axios.get(`https://source.unsplash.com/collection/483251/`);
 funcer = async (address) => {
     let website = `https://api.mapbox.com/geocoding/v5/mapbox.places/` + address + `.json?limit=1&access_token=pk.eyJ1IjoiY2FiYmFnZW1vbnN0ZXIiLCJhIjoiY2t0dWF1dnJpMXk0ZjJvbXB4bTEzNjdzdCJ9.mvQJu238Knmw69lGHD92Mg`;
-    console.log(website);
+    //console.log(website);
     resp = await axios.get(website);
     coord = resp.data.features[0].geometry.coordinates;
-    console.log(coord);
+    //console.log(coord);
     createMarker(coord);
 };
 // funcer();

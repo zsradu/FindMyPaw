@@ -21,6 +21,8 @@ h1{
   color: black;
   font-family: "Poppins", sans-serif;
 }
-body{
-    background: url("paws5.jpg") top center;
+a{
+  padding: 40px;
+  background-color:#D9D7F1 ;
+  color: #fff;
 }

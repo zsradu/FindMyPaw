@@ -35,6 +35,7 @@ type Animal struct {
 	Name       string
 	Found      bool `json:"found"`
 	Location   string
+	Age        string
 	FirstX     float64
 	FirstY     float64
 	LastX      float64

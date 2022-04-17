@@ -140,3 +140,39 @@ func (c App) Logout() revel.Result {
 func (c App) AnimaleFaraStapan() revel.Result {
 	return c.Render()
 }
+
+func (c App) Voluntar() revel.Result {
+	return c.Render()
+}
+
+func (c App) IndexAnunturi() revel.Result {
+	var animalss []models.Animal
+	var animalsFilters models.Animal
+	c.Params.Bind(&animalsFilters, "Filters")
+	app.DB.Where(&models.Animal{
+		AnimalType: animalsFilters.AnimalType,
+		Breed:      animalsFilters.Breed,
+		Color:      animalsFilters.Color,
+		Age:        animalsFilters.Age,
+	}).Find(&animalss)
+	// app.DB.Where(&models.Animal{AnimalType: models.Dog}).First(&animal1)
+
+	var animals []models.Animal
+	app.DB.Find(&animals)
+	type LocationHTML struct {
+		X float64
+		Y float64
+	}
+	var locations []LocationHTML
+	var locationStrings []string
+	for _, item := range animals {
+		var loc LocationHTML
+		loc.Y = item.FirstX
+		loc.X = item.FirstY
+		locations = append(locations, loc)
+		if item.Location != "" {
+			locationStrings = append(locationStrings, item.Location)
+		}
+	}
+	return c.Render(locations, locationStrings, animalss)
+}

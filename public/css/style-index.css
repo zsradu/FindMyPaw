@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
-  z-index: 1;
+  z-index: -1;
 }
 #hero .icon-box .title {
   font-weight: 700;

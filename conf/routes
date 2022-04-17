@@ -32,6 +32,10 @@ GET     /logout                                 App.Logout
 
 GET     /animaleFaraStapan                      App.AnimaleFaraStapan
 
+GET     /voluntar                               App.Voluntar
+
+GET     /indexAnunturi                          App.IndexAnunturi
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

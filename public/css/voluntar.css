@@ -1,0 +1,29 @@
+
+h5{
+  font-size: 20px;
+}
+
+
+.butoane{
+  background-color: #D9D7F1;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+
+
+}
+h1{
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  padding: 40px;
+  background-color:#D9D7F1 ;
+  color: #fff;
+}
