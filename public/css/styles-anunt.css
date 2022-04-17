@@ -1,0 +1,89 @@
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #E7FBBE;
+  padding: 20px;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+
+.imagine{
+  padding: 30px;
+  margin: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  background-color: #E7FBBE;
+}
+
+hr{
+  border-width: 2px;
+  border-color: #F1DDBF;
+  border: solid;
+}
+
+.animal_pierdut .h1s{
+  font-size: 3.5rem;
+color: #243D25;
+width:290px;
+padding-bottom: 5px;
+line-height: 1;
+text-align: center;
+position: relative;
+
+}
+
+.animal_pierdut{
+  background-color: #FFEFEF;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+a{
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #0F0E0E;
+  background-color: #E7FBBE;
+  border: solid 2px;
+  border-radius: 20%;
+}
+
+.date{
+  border: solid 3px;
+  text-align: left;
+  background-color: #FFEFEF;
+    color: #000;
+    margin: auto;
+}

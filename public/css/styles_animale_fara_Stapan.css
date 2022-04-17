@@ -1,0 +1,351 @@
+/**
+* Template Name: MyResume - v4.7.0
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #243D25;
+  font-weight: bold;
+  background: url("paws5.jpg") top center;
+  margin: auto;
+
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1{
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 3.5rem;
+}
+.titlu{
+  text-align: center;
+  color: #FDD7AA;
+  margin: auto;
+  margin-top: 0;
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0563bb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #0678e3;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0563bb;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 540px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #E7FBBE;
+
+}
+@media (max-width: 540px) {
+  #header {
+    width: 700px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+
+}
+
+
+
+@media (min-width: 540px) {
+  #main {
+    margin-left: 500px;
+  }
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation
+*/
+.nav-menu {
+  padding: 0;
+  display: block;
+  background-color: #243D25;
+
+}
+.nav-menu * {
+  margin: 400;
+  padding: 0;
+  list-style: none;
+  background-color: #E7FBBE;
+}
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu a, .nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #243D25;
+  padding: 10px 18px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #243D25;
+  height:  56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+  background-color: #243D25;
+  color: #fff;
+}
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 20px;
+    background: #E7FBBE;
+}
+ .nav-menu a span, .nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #fff;
+    background: #243D25;
+}
+@media (min-width: 540px) {
+  .nav-menu a, .nav-menu a:focus {
+    width: 300px;
+  }
+
+.nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover > a span {
+  color: #000;
+  //background: #95D1CC;
+}  //anunturile mele
+
+.nav-menu a:hover span, .nav-menu li:hover > a span {
+  display: block;
+   background: #95D1CC;
+}
+
+/**
+* Mobile Navigation
+*/
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+.mobile-nav-toggle i {
+  color: #95D1CC;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+.mobile-nav-active #header {
+  left: 0;
+}
+.mobile-nav-active .mobile-nav-toggle {
+  color: #fff;
+  background-color: #95D1CC;
+}
+
+
+/* # Sections General */
+
+section {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #95D1CC;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #95D1CC;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #95D1CC;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+
+  /* Section datele mele */
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+
+  .data {
+
+    margin: auto;
+    width: 300px;
+    padding-left: 200px;
+    border: solid 4px;
+    text-align: left;
+    background-color: #B6FFCE;
+  }
+
+  .container{
+  margin:auto;
+    color: #000;
+  }
+
+  .imagine{
+    padding-bottom: 30px;
+  }

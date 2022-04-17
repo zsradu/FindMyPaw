@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+</head>
+<body>
+<div id="map" style="width: 800px; height: 600px"></div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>-->
+<script src="public/js/map.js"></script>
+
+
+
+{{range .locations}}
+<script>
+var currentCoord = [ {{.X}}, {{.Y}} ]
+// console.log(currentCoord);
+createMarker(currentCoord);
+
+</script>
+{{end}}
+
+{{range .locationStrings}}
+<script>
+    var currentString = {{.}}
+    // console.log(currentCoord);
+    funcer(currentString);
+
+</script>
+{{end}}
+
+
+
+<link
+        href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+        rel="stylesheet"
+/>
+</body>
+</html>

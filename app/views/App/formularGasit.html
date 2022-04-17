@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/formular.css">
+</head>
+
+<script>
+  function updateVaccine1() {
+    console.log("here")
+    var selection = document.getElementById("vaccine1");
+    // var text = selection.options[selection.selectedIndex].text;
+    // console.log("text",text)
+    const text = selection.options[selection.selectedIndex].textContent
+
+
+    // document.getElementById("vaccine2").value = "none";
+    // document.getElementById("vaccine3").value = "none";
+    if (text == "Pisică") {
+      document.getElementById("form2").style.display = "block";
+      document.getElementById("form3").style.display = "none";
+      document.getElementById("form4").style.display = "block";
+      document.getElementById("form5").style.display = "block";
+      document.getElementById("nume").style.display = "block";
+      document.getElementById("data").style.display = "block";
+          document.getElementById("img").style.display = "block";
+                document.getElementById("submit").style.display = "block";
+
+    } else {
+      if (text == "Câine") {
+        document.getElementById("form3").style.display = "block";
+        document.getElementById("form2").style.display = "none";
+        document.getElementById("form4").style.display = "block";
+        document.getElementById("form5").style.display = "block";
+        document.getElementById("nume").style.display = "block";
+        document.getElementById("data").style.display = "block";
+          document.getElementById("img").style.display = "block"
+            document.getElementById("submit").style.display = "block";;
+
+      }
+    }
+  }
+
+
+  function checkData() {
+    var minimumData1 = document.getElementById("vaccine1");
+    var text1 = minimumData1.options[minimumData1.selectedIndex].text;
+    if (text1 == "-none-") {
+      alert("You didnt pick any of the options!");
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Formular găsire animal</h1>
+  </header>
+<div class="Formular">
+
+  <form action="/submit" method="POST">
+    <div class="w3-center">
+      <div class="selectForm" id="form1">
+        <label for="form1">
+          <h5>Tipul animalului:</h5>
+        </label>
+        <select id="vaccine1" name="Form.Vac1" onchange=updateVaccine1()>
+          <option value="" selected>-none-</option>
+          <option value="Pisică">Pisică</option>
+          <option value="Câine">Câine</option>
+        </select>
+      </div>
+      <div class="selectForm" id="form3">
+        <label for="form3">
+          <h5>Rasă:</h5>
+        </label>
+        <select id="form3" name="Form.Vac1" onchange=updateVaccine1()>
+          <option value="Labrador">Labrador</option>
+          <option value="Pechinez">Pechinez</option>
+          <option value="Puddle">Puddle</option>
+        </select>
+      </div>
+      <div class="selectForm" id="form2">
+        <label for="form2">
+          <h5>Rasă:</h5>
+        </label>
+        <select id="form2" name="Form.Vac1" onchange=updateVaccine1()>
+          <option value="Birmaneză">Birmaneză</option>
+          <option value="Albastru de Rusia">Albastru de Rusia</option>
+          <option value="Norvegiană">Norvegiană</option>
+        </select>
+      </div>
+      <div class="selectForm" id="form4">
+        <label for="form4">
+          <h5>Culoare:</h5>
+        </label>
+        <select id="form4" name="Form.Vac1" onchange=updateVaccine1()>
+          <option value="Negru">Negru</option>
+          <option value="Alb">Alb</option>
+          <option value="Maro">Maro</option>
+          <option value="Portocaliu">Portocaliu</option>
+          <option value="Multicolor">Multicolor</option>
+        </select>
+      </div>
+
+      <div class="selectForm" id="form5">
+        <label for="form5">
+          <h5>Vârstă:</h5>
+        </label>
+        <select id="form5" name="Form.Vac1" onchange=updateVaccine1()>
+          <option value="Pui">Pui</option>
+          <option value="Matur">Matur</option>
+        </select>
+      </div>
+
+      <!-- <div class="selectForm" id="data">
+        <label for="data">
+          <h5>Culoare:</h5>
+        </label>
+        <select id="data" name="Form.Vac1" onchange=updateVaccine1()>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        </select>
+      </div> -->
+<br>
+
+
+
+      <div class="Data" id="data">
+          <label for="start"><h5>Data la care ai pierdut animalul:</h5></label>
+          <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    </div>
+<br>
+        <div class="Nume" id="nume">
+          <label for="nume"><h5>Numele animalului:</h5></label>
+          <input type="text" name="Numeanimal" value="">
+      </div>
+<br>
+    <div class="Imagine" id="img">
+      <label for="myfile"><h5>Încarcă imagini cu animalul:</h5></label>
+      <input type="file" id="myfile" name="myfile">
+
+    </div>
+</div>
+<br>
+<div class="Submit" id="submit">
+
+  <input type="submit" name="Submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Congrats page</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'>
+    <link rel="stylesheet" href="public/css/styles-sign.css">
+</head>
+<body>
+<h1> Formularul dvs a fost trimis.</h1>
+<div class="form-group pt-1">
+    <a href="/"> Înapoi la site</a>
+</div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="public/js/map.js"></script>
+<script>
+    var locationToPin = {{.lastLocation}}
+    // console.log("Locatia este: " + locationToPin);
+    // funcer(location);
+</script>
+</body>
+</html>

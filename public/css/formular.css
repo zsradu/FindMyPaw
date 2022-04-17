@@ -1,0 +1,26 @@
+
+h5{
+  font-size: 20px;
+}
+
+
+.butoane{
+  background-color: #FFEFEF;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+
+
+}
+h1{
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background: url("paws5.jpg") top center;
+}
